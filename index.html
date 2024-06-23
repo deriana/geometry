@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Rin.jpeg">
+</head>
+
+<body>
+    <header>
+        <h2>Geometry Calculator</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Geometry</a></li>
+            </ul>
+            <a href="https://www.instagram.com/hi_deri_/" target="_blank">
+                <img src="Rin.jpeg" alt="" class="profile">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="title">
+                <h2>Kubus</h2>
+            </div>
+            <div class="hitung">
+                <p>Masukkan Sisi Dalam Satuan Centimer</p>
+                <label for="">Sisi <input type="text" id="sisi"></label>
+                <button class="btn">Hitung</button>
+                <p>Luas :<span class="luas"></span></p>
+                <p>Volume :<span class="volume"></span></p>
+            </div>
+            <div class="info">
+                <h2>Rumus</h2>
+                <p>Volume :S3</p>
+                <p>Luas :6S</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title">
+                <h2>Bola</h2>
+            </div>
+            <div class="hitung">
+                <p>Masukkan Sisi Dalam Satuan Centimer</p>
+                <label for="">Jari-Jari <input type="text" id="jari-jari"></label>
+                <button class="btn_bola">Hitung</button>
+                <p>Luas :<span class="luas_bola"></span></p>
+                <p>Volume :<span class="volume_bola"></span></p>
+            </div>
+            <div class="info">
+                <h2>Rumus</h2>
+                <p>Volume :4/3πr3
+                </p>
+                <p>Luas :4πr2</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title">
+                <h2>Balok</h2>
+            </div>
+            <div class="hitung">
+                <p>Masukkan Sisi Dalam Satuan Centimer</p>
+                <label for="">Panjang <input type="text" id="panjang"></label>
+                <label for="">Lebar <input type="text" id="lebar"></label>
+                <label for="">Tinggi <input type="text" id="tinggi"></label>
+                <button class="btn_balok">Hitung</button>
+                <p>Luas :<span class="luas_balok"></span></p>
+                <p>Volume :<span class="volume_balok"></span></p>
+            </div>
+            <div class="info">
+                <h2>Rumus</h2>
+                <p>Volume :plt</p>
+                <p>Luas :2(pl+pt+lt)</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title">
+                <h2>Tabung</h2>
+            </div>
+            <div class="hitung">
+                <p>Masukkan Sisi Dalam Satuan Centimer</p>
+                <label for="">Jari2 <input type="text" id="jari_silinder"></label>
+                <label for="">Tinggi <input type="text" id="tinggi_silinder"></label>
+                <button class="btn_tabung">Hitung</button>
+                <p>Luas :<span class="luas_tabung"></span></p>
+                <p>Volume :<span class="volume_tabung"></span></p>
+            </div>
+            <div class="info">
+                <h2>Rumus</h2>
+                <p>Volume :πr2t</p>
+                <p>Luas :2πrt+2πr2</p>
+            </div>
+        </div>
+        </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

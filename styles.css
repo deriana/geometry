@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: #2D3250;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    border-bottom: 2px solid white;
+
+    .profile {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    h2 {
+        color: white;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    h2:hover {
+        color: #19A7CE;
+        transition: 0.5s;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    ul {
+        display: flex;
+        gap: 25px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    li a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    li a:hover {
+        color: #19A7CE;
+        transition: 0.3s;
+    }
+}
+
+main {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+
+    .container {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+        transition: 0.9s;
+        margin-left: 50px;
+        align-items: center;
+    }
+
+    .container:hover {
+        width: 700px;
+        height: 220px;
+        transition: 0.9s;
+        background: #424769;
+    }
+
+    .title {
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+
+    .title h2 {
+        width: 200px;
+        height: 200px;
+        background: #424769;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hitung  {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 300px;
+        height: 200px;
+        transition: 0.9s;
+        overflow: hidden;
+        background: #424769;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    .info {
+        overflow: hidden;
+        color: white;
+        background: #424769;
+        display: grid;
+        place-items: center;
+    }
+
+    .container p,label,button {
+        color: #fff;
+        margin-left: 10px;
+        font-size: 17px;
+    }
+
+    .container:hover .hitung {
+        display: block;
+        overflow: hidden;
+        transition: 0.9s;
+        opacity: 1;
+        transition: opacity 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .container:hover .info {
+        display: block;
+        overflow: hidden;
+    }
+
+    button {
+        width: 100px;
+        height: 20px;
+        background: #fff;
+        color: #2D3250;
+        border: none;
+        border-radius: 15px;
+        transition: 0.5s;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    button:hover {
+        color: #fff;
+        background: #2D3250;
+        transition: 0.5s;
+    }
+
+    input {
+        border: none;
+        transition: 0.9s;
+        padding-left: 10px;
+        background: #ddd;
+    }
+
+    input:focus {
+        height: 20px;
+        outline: #2D3250;
+        transition: 0.9s;
+    }
+}
